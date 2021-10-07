@@ -43,4 +43,3 @@ WHERE album_id IN(
     SELECT artist_id 
     FROM artist
     WHERE name = 'Queen'));
--- Q.7
