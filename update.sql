@@ -22,3 +22,15 @@ UPDATE customer
 SET support_rep_id = 4
 WHERE customer_id = 57;
 -- Q.5
+SELECT *
+FROM track
+WHERE composer IS NULL AND genre_id IN(
+  SELECT genre_id
+  FROM genre
+  WHERE name = 'Metal');
+  
+  UPDATE track
+  SET composer = 'The darkness around us';
+  
+  SELECT *
+  FROM track
